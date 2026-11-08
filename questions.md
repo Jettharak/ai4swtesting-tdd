@@ -15,3 +15,5 @@
 - Future task answers and workspace edits will be recorded here.
 - Added one Jest test to `tests/timesheet.test.js` verifying that submitting `Project 1` for 8 hours returns `true`; no source files were changed.
 - Ran the targeted Jest test; it fails as expected because `submitTimesheet` is not implemented yet.
+- Implemented `submitTimesheet(projectName, hours)` to return `true`, without changing the test.
+- Reran the targeted Jest test; it passes.
