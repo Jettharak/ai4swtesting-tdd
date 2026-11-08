@@ -17,3 +17,7 @@
 - Ran the targeted Jest test; it fails as expected because `submitTimesheet` is not implemented yet.
 - Implemented `submitTimesheet(projectName, hours)` to return `true`, without changing the test.
 - Reran the targeted Jest test; it passes.
+- Added one Jest test verifying a submitted timesheet can be retrieved as a list; no source files were changed.
+- Ran the targeted Jest tests; the new test fails as expected because `getTimesheets` is not implemented yet, while the existing test passes.
+- Added a `Map` keyed by project name for storing hours and implemented `getTimesheets()` to return the required list; tests were not changed.
+- Ran the targeted Jest tests; both pass.
