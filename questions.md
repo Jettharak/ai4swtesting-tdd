@@ -29,3 +29,5 @@
 - Ran the targeted Jest tests; the new total test returns 8 instead of 24 because `submitTimesheet` overwrites hours for an existing project.
 - Updated `submitTimesheet` to accumulate hours for an existing project; tests were not changed.
 - Ran the targeted Jest tests; all four pass.
+- Refactored timesheet storage to retain each project submission, validate project names and positive finite half-hour increments, return zero for unknown project totals, and expose individual entries through `getTimesheetHistory(projectName)`. Tests were not changed.
+- Verified all four existing Jest tests pass and ran targeted checks for invalid input, retained submission history, aggregate totals, and zero/empty results for unknown projects.
