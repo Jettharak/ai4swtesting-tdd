@@ -25,3 +25,7 @@
 - Ran the targeted Jest tests; all three pass.
 - Added one Jest test that submits three 8-hour timesheets for one project and expects the total to be 24; no source files were changed.
 - Ran the targeted Jest tests; the new test fails because `getTotalTimesheetHours` is not implemented, while the other three tests pass.
+- Added `getTotalTimesheetHours(projectName)` to return the hours currently stored for that project. No other source changes were made.
+- Ran the targeted Jest tests; the new total test returns 8 instead of 24 because `submitTimesheet` overwrites hours for an existing project.
+- Updated `submitTimesheet` to accumulate hours for an existing project; tests were not changed.
+- Ran the targeted Jest tests; all four pass.
