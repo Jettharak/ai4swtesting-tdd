@@ -23,3 +23,5 @@
 - Ran the targeted Jest tests; both pass.
 - Added one Jest test confirming multiple project timesheets are returned as a list; no source files were changed.
 - Ran the targeted Jest tests; all three pass.
+- Added one Jest test that submits three 8-hour timesheets for one project and expects the total to be 24; no source files were changed.
+- Ran the targeted Jest tests; the new test fails because `getTotalTimesheetHours` is not implemented, while the other three tests pass.
