@@ -15,3 +15,14 @@ test('added timesheets can be retrieved as a list', () => {
     { projectName: 'Project 1', hours: 8 },
   ]);
 });
+
+test('multiple added timesheets can be retrieved as a list', () => {
+  const timesheet = new Timesheet();
+  timesheet.submitTimesheet('Project 1', 8);
+  timesheet.submitTimesheet('Project 2', 4);
+
+  expect(timesheet.getTimesheets()).toEqual([
+    { projectName: 'Project 1', hours: 8 },
+    { projectName: 'Project 2', hours: 4 },
+  ]);
+});

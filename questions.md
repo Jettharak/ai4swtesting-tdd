@@ -21,3 +21,5 @@
 - Ran the targeted Jest tests; the new test fails as expected because `getTimesheets` is not implemented yet, while the existing test passes.
 - Added a `Map` keyed by project name for storing hours and implemented `getTimesheets()` to return the required list; tests were not changed.
 - Ran the targeted Jest tests; both pass.
+- Added one Jest test confirming multiple project timesheets are returned as a list; no source files were changed.
+- Ran the targeted Jest tests; all three pass.
